@@ -44,4 +44,7 @@ When a new execution context is put on top of the execution stack, it happens in
     * The difference between functions and variables hoisted is that functions are already defined
 
       before the execution phase starts, while variables are set up to "undefined", and will only be defined in the execution phase.
-* 
+* Scope & Scope Chain
+  * Each new function creates a scope: the space/env, in which the variables it defines are accessible.
+  * Also, in Javascript we have lexical scoping, and lexical just means where something is written in the code.  Lexical scoping means that a function that is lexically within and out of function, which means that it's written inside of another function and gets access to a scope of the outer function, also called the parent function, and with that it also gets access to the variables and functions that the parent function defines.
+
