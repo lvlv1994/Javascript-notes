@@ -47,4 +47,9 @@ When a new execution context is put on top of the execution stack, it happens in
 * Scope & Scope Chain
   * Each new function creates a scope: the space/env, in which the variables it defines are accessible.
   * Also, in Javascript we have lexical scoping, and lexical just means where something is written in the code.  Lexical scoping means that a function that is lexically within and out of function, which means that it's written inside of another function and gets access to a scope of the outer function, also called the parent function, and with that it also gets access to the variables and functions that the parent function defines.
+* This
+  * `this` variable is a variable that each and every execution context gets, it is stored in the execution context object.
+  * In a regular function call, the this keyword simply points at the global object, which , in case of the browser, is the window object.
+  * In a method call, which, it is a function that is attached to an object, the `this` variable points to the object that is calling the method.
+  * `this` keyword is not assigned a value until the function where it is defined is actually called. 
 
